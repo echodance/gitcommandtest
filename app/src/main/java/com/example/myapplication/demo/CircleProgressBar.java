@@ -71,7 +71,7 @@ public class CircleProgressBar extends View {
         TypedArray defArray = context.getTheme().obtainStyledAttributes(R.style.circleProgressBarDefStyle, defAttr);
         String circleProgressBarName = defArray.getString(0);
         defArray.recycle();
-
+        //改
 
         int n = ta.getIndexCount();
         for (int i = 0; i < n; i++) {
@@ -86,7 +86,6 @@ public class CircleProgressBar extends View {
                 case R.styleable.circleProgressBar_circleWidth:
                     circleWidth = ta.getDimensionPixelSize(attr, (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 6, getResources().getDisplayMetrics())); // 默认圆弧宽度为6dp
                     break;
-
                 default:
                     break;
             }
@@ -101,7 +100,7 @@ public class CircleProgressBar extends View {
         textPaint = new Paint();
         textPaint.setAntiAlias(true);
         textPaint.setDither(true);
-        textPaint.setColor(Color.BLACK); // 设置文字颜色
+        textPaint.setColor(Color.WHITE); // 设置文字颜色
     }
 
 
