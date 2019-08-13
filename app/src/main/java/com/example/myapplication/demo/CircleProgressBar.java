@@ -71,7 +71,8 @@ public class CircleProgressBar extends View {
         TypedArray defArray = context.getTheme().obtainStyledAttributes(R.style.circleProgressBarDefStyle, defAttr);
         String circleProgressBarName = defArray.getString(0);
         defArray.recycle();
-        //改
+        //改2
+        Log.e("---","---准备提交到远程仓库--");
 
         int n = ta.getIndexCount();
         for (int i = 0; i < n; i++) {
